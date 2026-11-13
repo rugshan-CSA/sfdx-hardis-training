@@ -36,6 +36,9 @@ site-src/
 
 # Editors and OS
 .DS_Store
+# Written by the Salesforce extensions in every working copy, never part of the project
+.vscode/settings.json
+**/lwc/jsconfig.json
 Thumbs.db
 *.swp
 
@@ -59,3 +62,6 @@ mkdocs.yml
 
 # Provider tokens for terminals and agents, never committed
 .env
+
+# Guinea Run Hall of Fame key rotation: kept on the maintainer machine only
+scripts/guinea-run/rotate-key.mjs
